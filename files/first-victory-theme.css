@@ -1,0 +1,65 @@
+/*
+// These are some basic styles to get you started.
+*/
+
+.first-victory {
+  background-color: white;
+  letter-spacing: 1px;
+}
+
+.first-victory a {
+  color: #f26c4f;
+}
+
+.first-victory header {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  text-align: center;
+  z-index: 999;
+  font-size: 12px;
+}
+@media only screen and (max-width: 480px) {
+  .first-victory header {
+    top: 0;
+    position: relative;
+    width: 100%;
+  }
+}
+.first-victory header h1 {
+  font-size: 40px;
+  line-height: 1.25;
+}
+@media only screen and (max-width: 480px) {
+  .first-victory header h1 {
+    font-size: 30px;
+  }
+}
+.first-victory .wrapper {
+  margin: 100px 0 10px;
+}
+@media only screen and (max-width: 480px) {
+  .first-victory .wrapper {
+    margin: 0 0 10px 0;
+  }
+}
+.first-victory .item {
+  float: left;
+  margin: 0 0 20px 0;
+}
+@media only screen and (max-width: 480px) {
+  .first-victory .item {
+    margin: 0 0 20px 0;
+  }
+}
+.first-victory .item p {
+  font-size: 15px;
+  line-height: 1.66667;
+  max-width: 600px;
+}
+
+/*
+// Write your own styles below this.
+// If you need to override any of the above styles, this is also a good place to do it. That way you can always rever to the original styles if you want.
+// Also, look at the structure of the HTML in your site - we provide lots of classes for styling.
+*/

@@ -1,0 +1,381 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8" />
+<title>Small Victories | Help</title>
+
+<link rel="stylesheet" href="global.css">
+
+<meta name="viewport" content="width=device-width, user-scalable=no" />
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script src="https:///ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Didact+Gothic" rel='stylesheet' type='text/css'>
+
+<style type="text/css">
+
+body {
+font-family: 'Didact Gothic', courier, sans-serif;
+background-color: #f26c4f;
+color: #666;
+letter-spacing: 1px;
+margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+font-weight: normal;
+line-height: 1.2;
+margin: 0;
+margin-bottom: 20px;
+}
+
+h1 {
+color: #f26c4f;
+font-size: 25px;
+}
+
+h2 {
+font-size: 20px;
+}
+
+p {
+font-size: 18px;
+line-height: 1.5;
+}
+
+p.small {
+font-size: 15px;
+line-height: 20/15;
+}
+
+p a {
+color: #f26c4f;
+}
+
+p span {
+color: #333;
+}
+
+a {
+text-decoration: none;
+color: inherit;
+}
+
+ul,
+ol {
+margin: 0;
+padding: 0;
+}
+
+li {
+list-style-position: inside;
+margin: 0;
+}
+
+.wrapper {
+position: absolute;
+width: 100%;
+height: 100%;
+margin-bottom: 100px;
+}
+
+.header {
+color: #fff;
+background: url('https://d1u1r4gda0jxkt.cloudfront.net/sv_logo_white.gif') no-repeat center center;
+height: 80px;
+background-size: 660px 83px;
+width: 100%;
+height: 100px;
+margin: 30px 0 50px;
+text-indent: -999999px;
+}
+
+.footer {
+background: url('https://d1u1r4gda0jxkt.cloudfront.net/footer_flag.gif') no-repeat center bottom;
+height: 59px;
+width: 48px;
+background-size: 48px 59px;
+position: fixed;
+bottom: 0;
+right: 20px;
+}
+
+.content {
+width: 800px;
+height: 100%;
+margin: 0 auto;
+}
+
+
+
+.module {
+width: 320px;
+border: 3px solid #f26c4f;
+background-color: #fff;
+padding: 30px;
+float: left;
+position: relative;
+}
+
+.module:hover {
+z-index: 9999999999;
+}
+
+.faq {
+z-index: 99999;
+margin: ;
+padding-right: ;
+}
+
+
+.how {
+z-index: 999999;
+margin: 160px 0 0 -30px;
+padding-left: 30px;
+}
+
+.files {
+z-index: 999;
+margin: -200px 0 0 50px;
+}
+
+.more-help {
+z-index: 99;
+margin: 180px 0 0 -100px;
+bottom: 0;
+position: absolute;
+}
+
+.button {
+width: 100%;
+background-color: #7accc8;
+color: #fff;
+text-align: center;
+padding: 30px 0;
+}
+
+.button:hover {
+background-color: #f26c4f;
+cursor: pointer;
+transition: background-color .1s ease-in-out;
+-moz-transition: background-color  .1s ease-in-out;
+-webkit-transition: background-color  .1s ease-in-out;
+-o-transition: background-color .1s ease-in-out;
+}
+
+.button a {
+display: block;
+}
+
+.clearfix {
+clear: both;
+}
+
+.accordion li {
+list-style-type: none;
+padding: 0;
+outline: 0;
+}
+
+.accordion p {
+font-size: 15px;
+}
+
+.accordion h2 {
+cursor: pointer;
+}
+
+.accordion h2:hover {
+color: #f26c4f;
+}
+
+.accordion h2:focus {
+outline: 0;
+}
+
+.accordion .plus,
+.accordion .minus {
+color: #f26c4f;
+font-size: 30px;
+display: inline-table;
+height: 20px !important;
+width: 20px !important;
+margin: 0;
+padding: 0 !important;
+outline: 0;
+line-height: 1.0;
+text-align: center;
+vertical-align: bottom;
+}
+
+.accordion .plus:before,
+.accordion .minus:before {
+display: table-cell;
+margin-right: 10px;
+}
+
+.accordion .plus:before {
+content:"+";
+}
+
+.accordion .minus:before {
+content:"-";
+}
+
+.ui-state-active:hover {
+color: #666 !important;
+cursor: default;
+}
+
+code {
+width: 320px;
+font-size: 12px;
+margin: 20px 0;
+}
+
+</style>
+
+<script>
+$(function() {
+
+	// Initialize the accordion with the header option specified:
+  $( ".accordion" ).accordion({
+   header: "h2",
+   heightStyle: "content"
+  });
+
+  // Get or set the header option, after initialization:
+	var header = $( ".accordion" ).accordion( "option", "header" );
+	$( ".accordion" ).accordion( "option", "header", "h2" );
+	var icons = $( ".accordion" ).accordion( "option", "icons" );
+	$( ".accordion" ).accordion( "option", "icons", { "header": "plus", "activeHeader": "minus" } );
+
+});
+</script>
+
+</head>
+<body>
+
+	<div class="wrapper">
+
+		<div class="header">
+			<a href="http://www.smallvictori.es">Small Victories</a>
+		</div>
+
+		<div class="content">
+			<div class="module faq accordion">
+				<h1>FAQs</h1>
+				<ul>
+					<li>
+						<h2>What can I use this for?</h2>
+						<p>Tons of cool stuff. A blog, just some images that you like, maybe a personal website. It's flexible. You add content, we'll display it.</p>
+					</li>
+					<li>
+						<h2>How do I use my own domain?</h2>
+						<p>
+							You'll need to create a CNAME record pointing at <code>smallvictori.es</code> from
+							your domain. There's a <a href="http://support.google.com/a/bin/answer.py?hl=en&amp;answer=47283">good guide</a> written by Google on how to create a
+							CNAME record. Bonus – this will also teach you a bit about how the internet works.
+						</p>
+					</li>
+					<li>
+						<h2>What this "markdown" thing?</h2>
+						<p>
+						We're glad you asked! Markdown makes Small Victories much better by giving you
+						an easy way to format your site. It's like HTML – a kind of "markup" language.<br>
+						Files that end in <code>.md</code> or <code>.markdown</code> will automatically
+						be rendered into HTML and injected into your page. It's the same syntax Tumblr uses!
+						See the <a href="http://daringfireball.net/projects/markdown/syntax">original guide</a> for more.
+					</p>
+					</li>
+					<li>
+						<h2>Can I use a root domain like <code>example.com</code>?</h2>
+						<p>
+							Unfortunately, no. This is a limitation of DNS. We require you to make a
+							CNAME record pointing at smallvictori.es, something you can't create on a root (apex) domain.
+							However – you could just create it for <code>www.example.com</code>. That will work!
+						</p>
+					</li>
+					<li>
+						<h2>My site isn't updating!</h2>
+						<p>
+							Uh-oh, that shouldn't be happening! First of all, make sure you have Dropbox
+							turned on your computer and that the little green checkmark is next to the files
+							in your smallvictori.es folder. All good? Then you'll want to wait a minute or two.
+						<br>If you still aren't seeing it update, feel free to <a href="mailto:broken@smallvictori.es">email us</a>
+						 and we will take a look.</p>
+					</li>
+				</ul>
+			</div>
+			<div class="module how accordion">
+				<h1>Tips</h1>
+				<ul>
+					<li>
+						<h2>Upload photos from your phone</h2>
+						<p>
+							Remember, you can use any Dropbox app to interact with your folder. That means
+							you could use the Dropbox iOS application to copy images from your phone straight
+							to your website. Pretty neat, right?
+						</p>
+						<p>You could also do this with any text editing app that works with Dropbox, like <a href="http://www.iawriter.com">iA Writer</a></p>
+					</li>
+					<li>
+						<h2>Make it secret</h2>
+						<p>
+							Don't want people visiting your page who don't know you?
+						<br>
+							There's something programmers call "security through obscurity". It
+							basically means that the less-guessable your domain is, the less
+							likely someone will find it.
+						<br>So, make it crazy! And then, make sure you don't post it anywhere
+							public on the internet – otherwise search engines (like Google) will
+							know where it is. Unlike your Grandma, they don't forget.
+						</p>
+					</li>
+					<li>
+						<h2>Reverse the order of posts</h2>
+						<p>
+							This is useful if you want to sort items in reverse chronology, like you would on a blog
+						<br>
+<code>$(document).ready(function() {
+ $(".span12").append($(".project")
+ .get().reverse());
+});</code>
+						</p>
+					</li>
+					<li>
+						<h2>How do I make my site responsive?</h2>
+						<p>
+							You can just insert the proper <code>&#60;meta&#62;</code> in the <code>&#60;head&#62;</code> by copying and pasting this script into your theme.js file:
+						<br>
+<code>$(document).ready(function() {
+  $('head').append("&#60;meta name='viewport'
+  content='width=device-width,
+  initial-scale=1.0'&#62;");
+});</code>
+						</p>
+					</li>
+					<li>
+						<h2>Use lazy loading if you have lots of images</h2>
+						<p>
+							Grab a <a href="http://www.appelsiini.net/projects/lazyload">lazy-load plugin</a> and put the .js file in your Small Victories folder. Then, throw
+<code>$("img").lazyload();</code> into your theme.js file.
+						</p>
+					</li>
+				</ul>
+			</div>
+			<div class="module more-help">
+			  <h1>More help</h1>
+			  <p>If you need more help, <a href="mailto:computers@smallvictori.es">send us a mail</a> or try us <a href="https://twitter.com/140victories">&#64;140victories</a>.</p>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+</html>
