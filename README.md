@@ -3,7 +3,8 @@
 </p>
 
 This is service for [Small Victories](https://smallvictori.es) that
-serves HTML pages created dynamically from a users Dropbox folder.
+serves HTML pages created dynamically from a users Dropbox folder. The pages are retrieved from Redis after being stored there by
+the [worker](https://github.com/pearkes/sv-fetcher) service.
 
 It also contains the marketing website, Dropbox OAuth flow and help pages.
 
