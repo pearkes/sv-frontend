@@ -3,7 +3,7 @@
 </p>
 
 This is service for [Small Victories](https://smallvictori.es) that
-serves HTML pages created dynamically from a user's Drobpox folder.
+serves HTML pages created dynamically from a users Dropbox folder.
 
 It also contains the marketing website, Dropbox OAuth flow and help pages.
 
