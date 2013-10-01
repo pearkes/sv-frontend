@@ -58,6 +58,12 @@ func (s *StatsSink) Event(event int) {
 	s.sink <- event
 }
 
+// Report a raw event
+func (s *StatsSink) Raw(value int64, key string) {
+	g := s.metrics.GetGauge(s.env + key)
+	g <- value
+}
+
 func (s *StatsSink) handle() {
 	for {
 		event, ok := <-s.sink
